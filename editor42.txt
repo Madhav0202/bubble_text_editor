@@ -1,0 +1,81 @@
+Keyword: editor42
+
+Project: Build a Text Editor from Scratch in C
+
+Philosophy:
+- Learn C through hands-on development
+- No external libraries (initially)
+- Incremental development, daily updates
+- Understand drawbacks of each feature addition
+
+---
+
+✅ Week 1: Editor Skeleton
+
+Day 1: Hello Editor
+- Setup basic C file
+- Print “Welcome to Editor”
+- Press Ctrl+Q to quit
+
+Day 2: Raw Mode
+- Enter raw mode with termios
+- Handle special keys
+- Restore terminal state on exit
+
+Day 3: Key Input
+- Capture key-by-key input
+- Detect arrows and Ctrl keys
+- Create `enum` for keys
+
+Day 4: Editor Buffer
+- Struct for text buffer
+- Display buffer content
+
+Day 5: Render Engine
+- Use escape codes for screen drawing
+- Build render buffer
+- Clear and redraw screen cleanly
+
+---
+
+✅ Week 2: Basic Editing
+
+Day 6: Cursor Movement
+- Arrow key support
+- Cursor bounds checking
+
+Day 7: Load File
+- Read text file into buffer
+- Store lines in struct array
+
+Day 8: Insert Mode
+- Insert typed characters
+- Adjust buffer dynamically
+
+Day 9: Save File
+- Write buffer back to disk
+- Add “Save success” message
+
+Day 10: Delete Support
+- Backspace and Delete keys
+- Line joining on delete
+
+---
+
+📦 Data Structures to Build
+
+- TextBuffer: dynamic array or linked list
+- Line: `typedef struct { char* text; int len; }`
+- EditorState: holds cursor, screen size, filename
+- KeyEvent: for input abstraction
+
+---
+
+🔧 Tools
+
+- GCC
+- `termios.h`
+- ANSI escape codes
+- Git for tracking
+
+
